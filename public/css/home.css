@@ -1,0 +1,65 @@
+h1{
+    text-align: center;
+}
+
+.operationListConteiner{
+    width: 80%;
+    margin: auto
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.operation{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: rgba(86, 61, 124, .15);
+    padding: 15px;
+    margin-top: 10px;
+}
+.operation:hover{
+    background-color: rgba(86, 61, 124, .20);
+}
+
+.operationItem{
+    margin: 5px;
+    font-size: 20px;
+}
+
+.registration-button{
+    display: inline;
+    font-size: 18px;
+    background-color: rgba(86, 61, 124, .15);
+    padding: 10px;
+    margin-right: 30px;
+    border: solid black 1px;
+}
+.registration-button:hover{
+    background-color: rgba(86, 61, 124, .20);
+}
+
+.informations{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.search-operation{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 180px;
+    font-size: 18px;
+}
+
+.search-input{
+    margin: 0px 8px 0px 8px;
+}
+
+.general{
+    width: 80%;
+    margin: auto;
+}

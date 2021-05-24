@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Operações</title>
+    <link rel="stylesheet" href="/css/home.css">
+</head>
+<body>
+    <h1>Lista de Operações</h1>
+    <div class="general">
+        <p>Valor total das taxas cobradas: $ <%= totalRate %></p>
+    </div>
+    <div class="operationListConteiner">
+        <div class="informations">
+            <div class="registration-button">
+                <a href="/cadastrar">Cadastrar operação</a>
+            </div>
+            
+            <form action="/" method="POST" class="search-operation">
+                <p>Filtrar por data ou cliente: </p>
+                <input type="text" name="searchOperation" class="search-input">
+                <input type="submit" value="buscar">
+            </form>
+        </div>
+        <div>
+            <% allOperations.forEach(element => { %>
+                <a href="/" class="operation">
+                    <p class="operationItem"><%= element.name %> </p>
+                    <p class="operationItem"><%= element.date %> </p>
+                </a>
+            <% }) %> 
+        </div>
+    </div>
+</body>
+</html>
